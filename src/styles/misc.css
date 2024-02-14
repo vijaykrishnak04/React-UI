@@ -1,0 +1,25 @@
+
+.button-custom {
+    background-image: linear-gradient(to right, #37a27b, #10B981); 
+    color: white;
+    padding: 5px 20px; 
+    margin: 8px;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 500; 
+    border: none;
+    border-radius: 9999px; 
+    text-transform: uppercase; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+   
+  }
+  
+  .button-custom:hover {
+    background-image: linear-gradient(to left, #34D399, #10B981); 
+  }
+
+  @media (max-width: 768px) {
+    .carousel-arrow {
+      display: none;
+    }
+  }
+  
