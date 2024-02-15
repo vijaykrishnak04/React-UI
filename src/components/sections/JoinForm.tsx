@@ -75,19 +75,19 @@ const JoinForm: React.FC = () => {
                 <option value="+971">+971 Uae</option>
                 <option value="+1">+1 Usa</option>
               </select>
-              <input type="text" name="phoneNumber" id="phone-number" className="pl-2 mt-1 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" placeholder="9456789210" value={formData.phoneNumber} onChange={handleChange} />
+              <input type="text" name="phoneNumber" id="phone-number" className="px-2 mt-1 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" placeholder="9456789210" value={formData.phoneNumber} onChange={handleChange} />
             </div>
             {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber}</p>}
           </div>
           {/* Other fields */}
           <div>
             <label htmlFor="name" className="pl-2 block text-sm font-medium text-gray-700">NAME</label>
-            <input type="text" name="name" id="name" className="mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" value={formData.name} onChange={handleChange} />
+            <input type="text" name="name" id="name" className="px-2 mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" value={formData.name} onChange={handleChange} />
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
           </div>
           <div>
             <label htmlFor="email" className="pl-2 block text-sm font-medium text-gray-700">EMAIL (OPTIONAL)</label>
-            <input type="email" name="email" id="email" className="mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" value={formData.email} onChange={handleChange} />
+            <input type="email" name="email" id="email" className="px-2 mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" value={formData.email} onChange={handleChange} />
             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
           </div>
           <button type="submit" className="w-full flex justify-center py-1 px-4 border border-transparent rounded-3xl shadow-sm text-xl font-medium text-white bg-sky-500 hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500">
