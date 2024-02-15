@@ -68,25 +68,25 @@ const JoinForm: React.FC = () => {
         <form className="space-y-4 md:w-4/5" onSubmit={handleSubmit}>
           {/* Form fields with handleChange and values from formData */}
           <div>
-            <label htmlFor="phone-number" className="block text-sm font-medium text-gray-700">PHONE NUMBER</label>
+            <label htmlFor="phone-number" className="pl-2 block text-sm font-medium text-gray-700">PHONE NUMBER</label>
             <div className="mt-1 flex">
-              <select name="country" className='mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm mr-2' value={formData.country} onChange={handleChange}>
+              <select name="country" className='px-2 mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm mr-2' value={formData.country} onChange={handleChange}>
                 <option value="+91">+91 India</option>
                 <option value="+971">+971 Uae</option>
                 <option value="+1">+1 Usa</option>
               </select>
-              <input type="text" name="phoneNumber" id="phone-number" className="mt-1 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" placeholder="9456789210" value={formData.phoneNumber} onChange={handleChange} />
+              <input type="text" name="phoneNumber" id="phone-number" className="pl-2 mt-1 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" placeholder="9456789210" value={formData.phoneNumber} onChange={handleChange} />
             </div>
             {errors.phoneNumber && <p className="text-red-500 text-xs mt-1">{errors.phoneNumber}</p>}
           </div>
           {/* Other fields */}
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">NAME</label>
+            <label htmlFor="name" className="pl-2 block text-sm font-medium text-gray-700">NAME</label>
             <input type="text" name="name" id="name" className="mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" value={formData.name} onChange={handleChange} />
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">EMAIL (OPTIONAL)</label>
+            <label htmlFor="email" className="pl-2 block text-sm font-medium text-gray-700">EMAIL (OPTIONAL)</label>
             <input type="email" name="email" id="email" className="mt-1 h-10 block w-full rounded-3xl border border-gray-600 shadow-sm sm:text-sm" value={formData.email} onChange={handleChange} />
             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
           </div>
